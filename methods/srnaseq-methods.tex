@@ -32,9 +32,9 @@ suitable for further analysis. 3' end adapter were trimmed from reads using
 cutadapt \cite{Martin:2011va}. Trimmed reads were aligned to miRBase
 21 \cite{Kozomara2014} using seqbuster \cite{Pantano2010}.
 
-miRNAs counting was done with isomiRs package \href{http://github.com/lpantano/isomiRs} discarting any sequence with only 1 count. Normalilzation and differential expression at the gene level were called with
+miRNAs counting was done with isomiRs package \href{http://github.com/lpantano/isomiRs} discarding any sequence with only 1 count. A second round of filtering was applied to remove several of the low expressors; a minimum of 2 replicates per condition in every case were required to have 3 or more counts. Normalilzation and differential expression at the miRNA level were called with
 DESeq2 \cite{Love:2014do}, which has been shown to be a robust,
-conservative differential expression calller.
+conservative differential expression caller.
 
 \section{Bibliography}
 \bibliographystyle{plain}
